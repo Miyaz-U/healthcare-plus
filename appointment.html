@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/appointment.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>HealthCare+ | Book Appointment</title>
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/logo.jpeg" title="Logo" alt="HealthCare+ Logo">
+                <span>HealthCare+</span>
+            </div>
+
+            <button id="menuToggle" class="menu-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-links">
+                <a href="index.html" title="Home">
+                    <img src="images/icon/home.jpeg" title="Home" alt="Home Icon" class="nav-icon">
+                    Home
+                </a>
+                <a href="doctors.html" title="Doctors">
+                    <img src="images/icon/doctors.jpeg" title="Doctors" alt="Doctors Icon" class="nav-icon">
+                    Doctors
+                </a>
+                <a href="appointment.html" class="active" title="Appointments">
+                    <img src="images/icon/appointments.jpeg" title="Appointments" alt="Appointments Icon" class="nav-icon">
+                    Appointment
+                </a>
+                <a href="about.html" title="About">
+                    <img src="images/icon/about.jpeg" title="About" alt="About Icon" class="nav-icon">
+                    About
+                </a>
+                <a href="contact.html" title="Contact">
+                    <img src="images/icon/contact.jpeg" title="Contact" alt="Contact Icon" class="nav-icon">
+                    Contact
+                </a>
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-heading">
+        <h1>Book an Appointment</h1>
+        <p>Fill in your details and we'll confirm your slot</p>
+    </section>
+
+    <section class="appointment-section">
+        <form id="appointmentForm" class="appointment-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="patientName">Patient Name</label>
+                    <input type="text" id="patientName" placeholder="Enter your full name">
+                    <span class="error-msg" id="nameError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" placeholder="Enter your age">
+                    <span class="error-msg" id="ageError"></span>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select id="gender">
+                        <option value="">Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone number">
+                    <span class="error-msg" id="phoneError"></span>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your Email">
+                    <span class="error-msg" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="doctorSelect">Doctor</label>
+                    <select id="doctorSelect">
+                        <option value="">Select a Doctor</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="appointmentDate">Appointment Date</label>
+                    <input type="date" id="appointmentDate">
+                    <span class="error-msg" id="dateError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="timeSlot">Time Slot</label>
+                    <select id="timeSlot" disabled>
+                        <option value="">Select a doctor first</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="symptoms">Symptoms</label>
+                <textarea id="symptoms" rows="4" placeholder="Briefly describe your symptoms"></textarea>
+                <span class="error-msg" id="symptomsError"></span>
+            </div>
+
+            <button type="submit" class="btn-primary submit-btn">Book Appointment</button>
+        </form>
+
+        <div id="appointmentSummary" class="appointment-summary hidden"></div>
+    </section>
+
+    <section class="history-section">
+        <div class="history-header">
+            <h2>Your Appointment History</h2>
+            <button id="clearHistoryBtn" class="clear-history-btn" title="Clear History">Clear history</button>
+        </div>
+        <div id="historyContainer" class="history-list"></div>
+    </section>
+
+    <div id="notification" class="notification hidden"></div>
+
+    <footer class="footer">
+        <p>&copy; 2026 HealthCare+. All rights reserved.</p>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/doctorsData.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/notification.js"></script>
+    <script src="js/history.js"></script>
+    <script src="js/remainder.js"></script>
+    <script src="js/appointment.js"></script>
+</body>
+</html>

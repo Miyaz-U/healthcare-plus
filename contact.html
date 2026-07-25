@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/appointment.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>HealthCare+ | Contact</title>
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/logo.jpeg" title="Logo" alt="HealthCare+ Logo">
+                <span>HealthCare+</span>
+            </div>
+
+            <button id="menuToggle" class="menu-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-links">
+                <a href="index.html" title="Home">
+                    <img src="images/icon/home.jpeg" title="Home" alt="Home Icon" class="nav-icon">
+                    Home
+                </a>
+                <a href="doctors.html" title="Doctors">
+                    <img src="images/icon/doctors.jpeg" title="Doctors" alt="Doctors Icon" class="nav-icon">
+                    Doctors
+                </a>
+                <a href="appointment.html" title="Appointments">
+                    <img src="images/icon/appointments.jpeg" title="Appointments" alt="Appointments Icon" class="nav-icon">
+                    Appointment
+                </a>
+                <a href="about.html" title="About">
+                    <img src="images/icon/about.jpeg" title="About" alt="About Icon" class="nav-icon">
+                    About
+                </a>
+                <a href="contact.html" class="active" title="Contact">
+                    <img src="images/icon/contact.jpeg" title="Contact" alt="Contact Icon" class="nav-icon">
+                    Contact
+                </a>
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-heading">
+        <h1>Contact Us</h1>
+        <p>Have a question? We'd love to hear from you</p>
+    </section>
+
+    <section class="contact-section">
+        <div class="contact-info">
+            <div class="info-box">
+                <h3>Address</h3>
+                <p>221B Health Street, Wellness City, IN 600001</p>
+            </div>
+            <div class="info-box">
+                <h3>Phone</h3>
+                <p>+91 98765 43210</p>
+            </div>
+            <div class="info-box">
+                <h3>Email</h3>
+                <p>support@healthcareplus.com</p>
+            </div>
+            <div class="info-box">
+                <h3>Hours</h3>
+                <p>Mon - Sat: 08:00 AM - 08:00 PM</p>
+            </div>
+        </div>
+        
+        <form id="contactForm" class="contact-form">
+            <div class="form-group">
+                <label for="contactName">Your Name</label>
+                <input type="text" id="contactName" placeholder="Enter your full name">
+                <span class="error-msg" id="contactNameError"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="contactEmail">Your Email</label>
+                <input type="email" id="contactEmail" placeholder="you@example.com">
+                <span class="error-msg" id="contactEmailError"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="contactSubject">Subject</label>
+                <input type="text" id="contactSubject" placeholder="What's this about?">
+                <span class="error-msg" id="contactSubjectError"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="contactMessage">Message</label>
+                <textarea id="contactMessage" rows="5" placeholder="Write your message..."></textarea>
+                <span class="error-msg" id="contactMessageError"></span>
+            </div>
+            
+            <button type="submit" class="btn-primary submit-btn" title="Send Message">Send Message</button>
+        </form>
+    </section>
+
+    <div id="notification" class="notification hidden"></div>
+
+    <footer class="footer">
+        <p>&copy; 2026 HealthCare+. All rights reserved.</p>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/history.js"></script>
+    <script src="js/remainder.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/notification.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

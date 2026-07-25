@@ -1,0 +1,138 @@
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 26px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.menu-toggle span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+
+.menu-toggle.open span:nth-child(1) {
+    transform: translateY(8.5px) rotate(45deg);
+}
+
+.menu-toggle.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.open span:nth-child(3) {
+    transform: translateY(-8.5px) rotate(-45deg);
+}
+
+@media (max-width: 1024px) {
+    .doctors-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--light-bg);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        max-height: 0;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+        transition: max-height 0.3s ease;
+    }
+
+    .nav-links.nav-open {
+        max-height: 400px;
+    }
+
+    .nav-links a {
+        width: 100%;
+        padding: 14px 20px;
+        border-top: 1px solid #eee;
+    }
+
+    .logo span {
+        font-size: 16px;
+    }
+
+    .doctors-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .doctors-section {
+        padding: 20px 20px 40px;
+    }
+
+    .filter-search-section {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0 20px;
+    }
+
+    .filter-buttons {
+        justify-content: center;
+    }
+
+    .search-box input {
+        width: 100%;
+    }
+
+    .stats-section {
+        gap: 25px;
+    }
+
+    .stat-box {
+        flex-basis: 40%;
+    }
+
+    .appointment-form {
+        padding: 20px;
+    }
+
+    .notification {
+        left: 20px;
+        right: 20px;
+        top: 15px;
+    }
+
+    .hero-text h1 {
+        font-size: 24px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-section {
+        flex-direction: column;
+    }
+}

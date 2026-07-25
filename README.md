@@ -2,7 +2,7 @@
 
 A responsive doctor appointment booking website built with **HTML5, CSS3, and vanilla JavaScript (ES6)** — no frameworks, no libraries, no backend.
 
-🔗 **Live demo:** _add your GitHub Pages link here after deploying, e.g. https://YOUR-USERNAME.github.io/healthcare-plus/_
+🔗 **Live demo:**https://miyaz-u.github.io/healthcare-plus/
 
 ## About
 

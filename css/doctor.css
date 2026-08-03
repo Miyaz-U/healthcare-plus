@@ -52,15 +52,6 @@
     }
 }
 
-.doctor-card:nth-child(1) { animation-delay: 0s; }
-.doctor-card:nth-child(2) { animation-delay: 0.1s; }
-.doctor-card:nth-child(3) { animation-delay: 0.2s; }
-.doctor-card:nth-child(4) { animation-delay: 0.3s; }
-.doctor-card:nth-child(5) { animation-delay: 0.4s; }
-.doctor-card:nth-child(6) { animation-delay: 0.5s; }
-.doctor-card:nth-child(7) { animation-delay: 0.6s; }
-.doctor-card:nth-child(8) { animation-delay: 0.7s; }
-
 .doctor-img {
     width: 120px;
     height: 120px;

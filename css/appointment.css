@@ -26,6 +26,28 @@
     padding: 30px;
 }
 
+.form-fieldset {
+    border: none;
+    padding: 20px 0 0;
+    margin: 0 0 10px;
+}
+
+.form-fieldset legend {
+    padding: 0;
+    margin-bottom: 16px;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 .form-row {
     display: flex;
     gap: 20px;

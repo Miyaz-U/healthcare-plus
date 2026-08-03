@@ -51,6 +51,11 @@
         display: flex;
     }
 
+    .hero-img {
+        width: 75%;
+        height: 100%;
+    }
+
     .nav-links {
         position: absolute;
         top: 100%;

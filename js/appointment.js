@@ -209,7 +209,7 @@ function bookAppointment(event) {
     addBooking(newBooking)
     renderHistory()
 
-    showNotification("Thank you! Your appointment has been confirmed.")
+    showNotificationAppointment("Thank you! Your appointment has been confirmed.")
 
     appointmentForm.reset()
 }

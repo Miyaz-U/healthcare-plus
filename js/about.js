@@ -7,7 +7,7 @@ function showTeam() {
                 <img src="${doctor.image}" alt="${doctor.name}" class="team-img">
                 <h3>${doctor.name}</h3>
                 <p class="specialization">${doctor.specialization}</p>
-                <p class="experience">${doctor.experience}</p>
+                <p class="experience">${doctor.experience} years</p>
             </div>
         `
         teamContainer.innerHTML += card

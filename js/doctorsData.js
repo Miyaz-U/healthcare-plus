@@ -1,7 +1,7 @@
 const doctors = [
     {
         id: 1,
-        name: "Dr. Anya Sharma",
+        name: "Dr. Ayesha Fathima Begum",
         specialization: "Cardiologist",
         experience: 12,
         hospital: "St. Marys Healthcare",
@@ -12,7 +12,7 @@ const doctors = [
     },
     {
         id: 2,
-        name: "Dr. David Chen",
+        name: "Dr. Mohammed Arif Khan",
         specialization: "Orthopedic",
         experience: 15,
         hospital: "Citywide Healthcare",
@@ -23,7 +23,7 @@ const doctors = [
     },
     {
         id: 3,
-        name: "Dr. Mei Ling Chen",
+        name: "Dr. Zara Noor Jahan",
         specialization: "Neurologist",
         experience: 20,
         hospital: "Citywide Healthcare",
@@ -34,7 +34,7 @@ const doctors = [
     },
     {
         id: 4,
-        name: "Dr. Michael Vidler",
+        name: "Dr. Syed Amaan Ali",
         specialization: "Pediatrician",
         experience: 9,
         hospital: "Citywide Healthcare",

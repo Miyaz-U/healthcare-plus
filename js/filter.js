@@ -1,3 +1,19 @@
+const filterButtonsContainer = document.getElementById("filterButtons")
+const favouritesBtn = filterButtonsContainer.querySelector('[data-specialization="Favourites"]')
+
+const specializations = [...new Set(doctors.map(function (doctor) {
+    return doctor.specialization
+}))]
+
+specializations.forEach(function (specialization) {
+    const btn = document.createElement("button")
+    btn.className = "filter-btn"
+    btn.title = specialization
+    btn.setAttribute("data-specialization", specialization)
+    btn.textContent = specialization
+    filterButtonsContainer.insertBefore(btn, favouritesBtn)
+})
+
 const filterButtons = document.querySelectorAll(".filter-btn")
 const searchInput = document.getElementById("searchInput")
 

@@ -41,7 +41,7 @@ function handleContactSubmit(event) {
         return
     }
 
-    showNotification("We've recieved your message and will get back to you soon.")
+    showNotificationContact("We've recieved your message and will get back to you soon.")
     contactForm.reset()
 }
 contactForm.addEventListener("submit", handleContactSubmit)

@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="View the doctors in our hospital and book an appointment with them.">
+    <meta name="keywords"
+        content="healthcare, book doctor appointment, online appointment booking, find a doctor, medical specialists, healthcare platform">
+    <link rel="canonical" href="https://miyaz.github.io/Healthcare-plus/doctors.html">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/doctor.css">
     <link rel="stylesheet" href="css/responsive.css">
     <title>HealthCare+ | Doctors</title>
 </head>
+
 <body>
     <header class="navbar">
         <div class="nav-container">
@@ -24,27 +31,22 @@
 
             <nav class="nav-links">
                 <a href="index.html" title="Home">
-                    <img src="images/icon/home.jpeg" title="Home" alt="Home Icon" class="nav-icon">
                     Home
                 </a>
                 <a href="doctors.html" class="active" title="Doctors">
-                    <img src="images/icon/doctors.jpeg" title="Doctors" alt="Doctors Icon" class="nav-icon">
                     Doctors
                 </a>
                 <a href="appointment.html" title="Appointments">
-                    <img src="images/icon/appointments.jpeg" title="Appointments" alt="Appointments Icon" class="nav-icon">
                     Appointment
                 </a>
                 <a href="about.html" title="About">
-                    <img src="images/icon/about.jpeg" title="About" alt="About Icon" class="nav-icon">
                     About
                 </a>
                 <a href="contact.html" title="Contact">
-                    <img src="images/icon/contact.jpeg" title="Contact" alt="Contact Icon" class="nav-icon">
                     Contact
                 </a>
-                <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
             </nav>
+            <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
         </div>
     </header>
 
@@ -54,12 +56,8 @@
     </section>
 
     <section class="filter-search-section">
-        <div class="filter-buttons">
+        <div class="filter-buttons" id="filterButtons">
             <button class="filter-btn active" title="All" data-specialization="All">All</button>
-            <button class="filter-btn" title="Cardiologist" data-specialization="Cardiologist">Cardiologist</button>
-            <button class="filter-btn" title="Orthopedic" data-specialization="Orthopedic">Orthopedic</button>
-            <button class="filter-btn" title="Neurologist" data-specialization="Neurologist">Neurologist</button>
-            <button class="filter-btn" title="Pediatrician" data-specialization="Pediatrician">Pediatrician</button>
             <button class="filter-btn" title="Favourites" data-specialization="Favourites">💖 Favourites</button>
         </div>
 
@@ -84,4 +82,5 @@
     <script src="js/doctors.js"></script>
     <script src="js/filter.js"></script>
 </body>
+
 </html>

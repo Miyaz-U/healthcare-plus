@@ -126,13 +126,12 @@ body {
 
 .hero {
     position: relative;
-    width: 100%;
+    width: 500px;
 }
 
 .hero-img {
-    width: 100%;
-    height: auto;
-    display: block;
+    width: 1900px;
+    height: 700px;
 }
 
 .hero-cta {

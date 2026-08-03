@@ -27,7 +27,7 @@ function showDoctors(doctorsList) {
                 <p class="experience">${doctor.experience}</p>
                 <p class="hospital">${doctor.hospital}</p>
                 <p class="rating">${getStars(doctor.rating)}</p>
-                <p class="fee">lll${doctor.fee}</p>
+                <p class="fee">${doctor.fee}</p>
                 <button class="btn-primary book-btn" data-id="${doctor.id}">
                     Book Appointment
                 </button>

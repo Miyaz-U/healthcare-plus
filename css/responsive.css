@@ -66,6 +66,11 @@
         transition: max-height 0.3s ease;
     }
 
+    .hero-img {
+        width: 75%;
+        height: 100%;
+    }
+
     .nav-links.nav-open {
         max-height: 400px;
     }
